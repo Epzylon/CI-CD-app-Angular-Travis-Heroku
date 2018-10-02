@@ -4,7 +4,6 @@ dist: trusty
 sudo: required
 branches:
   only:
-    - master
     - develop
 
 cache:
@@ -24,8 +23,7 @@ deploy:
     api_key:
       secure: $KEY_HEROKU
     app:
-      master: cicd-simple-app
-      develop: cicd-simple-app-dev
+      develop: netsecure
     on:
       repo: Epzylon/CI-CD-app-Angular-Travis-Heroku
 
